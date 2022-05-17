@@ -1,0 +1,10 @@
+node_modules
+/.vscode
+.DS_Store
+jddj_bean.json
+package.json
+package-lock.json
+root.json
+githubAction.md
+serverless.yml
+serverless2.yml
