@@ -5,19 +5,19 @@
 2.在未签到情况下，先禁用第一条Cookie链接，然后再次进入签到，通知获取签到Cookie成功 surge极速版配置请自行更换
 Surge 4.0:
 [Script]
-新浪新闻 = type=cron,cronexp=35 5 0 * * *,script-path=https://gitee.com/tback1/tjs/raw/master/Task/sinanews.js,script-update-interval=0
-新浪新闻 = type=http-request,pattern=https:\/\/newsapi\.sina\.cn\/\?resource=hbpage&newsId=HB-1-sina_gold_center,script-path=https://gitee.com/tback1/tjs/raw/master/Task/sinanews.js
-新浪新闻 = type=http-request,pattern=https:\/\/newsapi\.sina\.cn\/\?resource=userpoint\/signIn,script-path=https://gitee.com/tback1/tjs/raw/master/Task/sinanews.js
+新浪新闻 = type=cron,cronexp=35 5 0 * * *,script-path=https://raw.githubusercontent.com/Tback1/TJS/main/Task/sinanews.js,script-update-interval=0
+新浪新闻 = type=http-request,pattern=https:\/\/newsapi\.sina\.cn\/\?resource=hbpage&newsId=HB-1-sina_gold_center,script-path=https://raw.githubusercontent.com/Tback1/TJS/main/Task/sinanews.js
+新浪新闻 = type=http-request,pattern=https:\/\/newsapi\.sina\.cn\/\?resource=userpoint\/signIn,script-path=https://raw.githubusercontent.com/Tback1/TJS/main/Task/sinanews.js
 
 ------------------
 Loon 2.1.0+
 [Script]
 # 本地脚本
-cron "04 00 * * *" script-path=https://gitee.com/tback1/tjs/raw/master/Task/sinanews.js, enabled=true, tag=新浪新闻
+cron "04 00 * * *" script-path=https://raw.githubusercontent.com/Tback1/TJS/main/Task/sinanews.js, enabled=true, tag=新浪新闻
 
-http-request https:\/\/newsapi\.sina\.cn\/\?resource=hbpage&newsId=HB-1-sina_gold_center script-path=https://gitee.com/tback1/tjs/raw/master/Task/sinanews.js
+http-request https:\/\/newsapi\.sina\.cn\/\?resource=hbpage&newsId=HB-1-sina_gold_center script-path=https://raw.githubusercontent.com/Tback1/TJS/main/Task/sinanews.js
 
-http-request https:\/\/newsapi\.sina\.cn\/\?resource=userpoint\/signIn script-path=https://gitee.com/tback1/tjs/raw/master/Task/sinanews.js
+http-request https:\/\/newsapi\.sina\.cn\/\?resource=userpoint\/signIn script-path=https://raw.githubusercontent.com/Tback1/TJS/main/Task/sinanews.js
 
 -----------------
 
